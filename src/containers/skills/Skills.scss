@@ -1,0 +1,122 @@
+@import "../../_globalColor";
+
+.skills-main-div {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  justify-content: flex-start; /* Changed from space-between to flex-start */
+  align-items: center;
+  gap: 40px; /* Increased gap for better spacing */
+}
+
+.skills-text-div {
+  flex: 2; /* Changed from 3 to 2 for better balance */
+  max-width: 800px;
+  text-align: left;
+  padding: 20px;
+}
+
+.skills-main-div > * {
+  margin-bottom: 0;
+}
+
+.skills-image-div {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px; /* Set a minimum width */
+  max-width: 500px; /* Increased from 250px */
+  min-height: 300px; /* Added minimum height */
+  max-height: 600px; /* Added maximum height */
+  height: auto;
+  padding: 0; /* Removed padding */
+  border-radius: 10px; /* Rounded corners */
+  margin-left: 20px; /* Left margin instead of right */
+}
+
+/* Make the animation container larger */
+.skills-image-div > div {
+  width: 100%;
+  height: 100%; /* Make inner div fill the container height */
+  max-width: 400px; /* Adjusted to accommodate height constraints */
+  min-height: 260px; /* Set minimum height for the inner animation */
+  max-height: 560px; /* Set maximum height for the inner animation */
+  margin: 0 auto;
+  object-fit: contain; /* Ensure animation maintains aspect ratio */
+}
+
+/* Rest of the styles remain the same */
+.skills-heading {
+  font-size: 60px;
+  font-weight: 400;
+}
+
+.skills-text-subtitle {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.skills-text {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.subTitle {
+  color: $subTitle;
+}
+
+/* Media Query */
+@media (max-width: 1380px) {
+  .skills-heading {
+    font-size: 44px;
+  }
+  .skills-text-subtitle {
+    font-size: 20px;
+  }
+  
+  .skills-main-div {
+    gap: 30px;
+  }
+  
+  .skills-image-div {
+    max-width: 400px;
+    min-width: 250px;
+    max-height: 500px; /* Adjusted height for medium screens */
+    min-height: 250px;
+  }
+  
+  .skills-image-div > div {
+    max-width: 360px;
+    max-height: 460px;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-heading {
+    font-size: 32px;
+    text-align: center;
+  }
+  .skills-text-subtitle {
+    font-size: 18px;
+    text-align: center;
+  }
+  .skills-text-div {
+    text-align: center;
+    padding: 20px;
+  }
+  .skills-text {
+    text-align: center;
+    font-size: 17px;
+  }
+  .skills-main-div {
+    flex-direction: column;
+  }
+  .skills-text-div {
+    margin: 20px 0;
+  }
+  .skills-image-div {
+    display: none;
+    order: 2;
+  }
+}

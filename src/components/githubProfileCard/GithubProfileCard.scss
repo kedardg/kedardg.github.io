@@ -1,0 +1,114 @@
+@import "../../_globalColor";
+
+.profile-image {
+  border-radius: 50%;
+  border: 0.5rem solid $githubProfileCardBorder;
+  margin-left: auto;
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  box-shadow: $lightBoxShadow 0 30px 30px -30px;
+  transition: all 0.3s ease-out;
+}
+
+.profile-image:hover {
+  box-shadow: none;
+}
+
+.prof-title {
+  font-size: 56px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.location-div {
+  margin: 10px 0;
+}
+
+.opp-div {
+  margin-bottom: 20px;
+}
+
+.row {
+  display: flex;
+}
+
+.main-content-profile {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 20px;
+}
+
+.image-content-profile {
+  text-align: right;
+  flex: 20%;
+  max-width: 100%;
+  height: auto;
+}
+
+.bio-text {
+  font-size: 22px;
+  line-height: 30px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.desc-prof {
+  line-height: 45px;
+  font-size: 19px;
+}
+
+.subTitle {
+  color: $subTitle;
+}
+
+@media (max-width: 768px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-content-profile {
+    text-align: center;
+  }
+
+  .bio-text {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .image-content-profile {
+    margin-left: auto;
+    margin-right: auto;
+    order: 1;
+  }
+
+  .desc-prof {
+    line-height: 30px;
+    font-size: 16px;
+  }
+
+  .profile-image {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+  }
+
+  .profile-image:hover {
+    box-shadow: $lightBoxShadow 0 50px 50px -50px;
+    transition: 0.3s ease-out;
+  }
+
+  .prof-title {
+    font-size: 40px;
+  }
+
+  .location-div, .opp-div {
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.name-email-row {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 20px;
+  width: 100%;
+  
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+.name-input, .email-input {
+  width: 50%;
+  
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.message-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+  border-color: #6d27ae;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(109, 39, 174, 0.25);
+}
+
+textarea.form-control {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.submit-btn {
+  background-color: #6d27ae;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #55198b;
+  transform: translateY(-2px);
+}
+
+.submit-btn:active {
+  transform: translateY(0);
+}
+
+.form-status {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  
+  &.success {
+    background-color: rgba(76, 175, 80, 0.2);
+    color: #8bc34a;
+  }
+  
+  &.error {
+    background-color: rgba(244, 67, 54, 0.2);
+    color: #ef5350;
+  }
+}
