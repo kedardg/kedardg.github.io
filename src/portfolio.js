@@ -104,7 +104,7 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fas fa-robot"
     },
     {
-      skillName: "sql-database",
+      skillName: "SQL-database",
       fontAwesomeClassname: "fas fa-database"
     }
   ],
@@ -118,7 +118,7 @@ const educationInfo = {
   schools: [
     {
       schoolName: "Arizona State University",
-      logo: require("./assets/images/facebookLogo.png"),
+      logo: require("./assets/images/asucircle-logo.png"),
       subHeader: "MS Robotics and Autonomous Systems (Artificial Intelligence)",
       duration: "August 2023 - May 2025",
       desc: "Courses: Frontiers in GenAI, Operational Deep Learning, ML accelerator design",
@@ -129,7 +129,7 @@ const educationInfo = {
     },
     {
       schoolName: "University of Mumbai",
-      logo: require("./assets/images/facebookLogo.png"),
+      logo: require("./assets/images/Mumbai-university-LOGO.jpg"),
       subHeader: "Bachelor of Engineering in Computer Engineering",
       duration: "August 2015 - May 2019",
       desc: "Courses: Machine Learning, Artificial Intelligence",
@@ -167,35 +167,35 @@ const workExperiences = {
     {
       role: "AI/ML Software Engineering Intern",
       company: "Stealth Startup",
-      companylogo: require("./assets/images/facebookLogo.png"),
+      companylogo: require("./assets/images/stealthlogo.jpg"),
       date: "Feb 2025 – Present",
       desc: "Leading core AI application development, building LLM-enhanced web scraping pipelines, and implementing document processing services with GCP Cloud Run.",
     },
     {
       role: "Research Assistant",
       company: "exsight.ai, ASU",
-      companylogo: require("./assets/images/quoraLogo.png"),
+      companylogo: require("./assets/images/teuvoent-logo.jpeg"),
       date: "Oct 2023 – Present",
       desc: "Conducting research on Explainable AI and adversarial robustness, integrating neuro-symbolic methods with object detection models.",
     },
     {
       role: "AI Research Intern",
       company: "RagaAI",
-      companylogo: require("./assets/images/airbnbLogo.png"),
+      companylogo: require("./assets/images/ragaailogo.jpeg"),
       date: "Jun 2024 – Aug 2024",
       desc: "Developed observability tools for LLM applications and implemented evaluation metrics for LLM and RAG system performance measurement.",
     },
     {
       role: "Senior Data Scientist",
       company: "RagaAI",
-      companylogo: require("./assets/images/airbnbLogo.png"),
+      companylogo: require("./assets/images/ragaailogo.jpeg"),
       date: "Jan 2022 – Aug 2023",
       desc: "Led implementation of computer vision systems and anomaly detection frameworks, contributing to RagaAI's platform development.",
     },
     {
       role: "Deep Learning Engineer",
       company: "Uncanny Vision",
-      companylogo: require("./assets/images/airbnbLogo.png"),
+      companylogo: require("./assets/images/Uncanny_Logo_Transp.png"),
       date: "Jun 2019 – Jul 2021",
       desc: "Optimized deep learning models for edge-AI applications, focusing on model compression and optimization for FPGA deployment.",
     }
