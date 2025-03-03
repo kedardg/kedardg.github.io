@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a46916cd.css",
-    "main.js": "/static/js/main.eea73822.js",
+    "main.css": "/static/css/main.cfa6203b.css",
+    "main.js": "/static/js/main.08b533f6.js",
     "static/css/487.bb36206c.chunk.css": "/static/css/487.bb36206c.chunk.css",
     "static/js/487.a78e3aff.chunk.js": "/static/js/487.a78e3aff.chunk.js",
     "static/css/990.c5c5ed50.chunk.css": "/static/css/990.c5c5ed50.chunk.css",
@@ -11,22 +11,19 @@
     "static/media/Uncanny_Logo_Transp.png": "/static/media/Uncanny_Logo_Transp.f3a2d1d86d677f0f39a3.png",
     "static/media/Mumbai-university-LOGO.jpg": "/static/media/Mumbai-university-LOGO.20650c66e2dcefebea20.jpg",
     "static/media/Agustina.woff": "/static/media/Agustina.eb0c59dda4cc308cba96.woff",
-    "static/media/googleAssistantLogo.webp": "/static/media/googleAssistantLogo.f720c71652579588524a.webp",
     "static/media/teuvoent-logo.jpeg": "/static/media/teuvoent-logo.bfb4d3df474706d0ba95.jpeg",
     "static/media/facebookLogo.png": "/static/media/facebookLogo.f46d68b24e9b4f73ee8b.png",
-    "static/media/codeInLogo.webp": "/static/media/codeInLogo.e41a71d512efeda2a55c.webp",
-    "static/media/pwaLogo.webp": "/static/media/pwaLogo.8bf2293da0ca66249e37.webp",
     "index.html": "/index.html",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
-    "main.a46916cd.css.map": "/static/css/main.a46916cd.css.map",
-    "main.eea73822.js.map": "/static/js/main.eea73822.js.map",
+    "main.cfa6203b.css.map": "/static/css/main.cfa6203b.css.map",
+    "main.08b533f6.js.map": "/static/js/main.08b533f6.js.map",
     "487.bb36206c.chunk.css.map": "/static/css/487.bb36206c.chunk.css.map",
     "487.a78e3aff.chunk.js.map": "/static/js/487.a78e3aff.chunk.js.map",
     "990.c5c5ed50.chunk.css.map": "/static/css/990.c5c5ed50.chunk.css.map",
     "990.989b755f.chunk.js.map": "/static/js/990.989b755f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a46916cd.css",
-    "static/js/main.eea73822.js"
+    "static/css/main.cfa6203b.css",
+    "static/js/main.08b533f6.js"
   ]
 }
