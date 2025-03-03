@@ -104,7 +104,7 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fas fa-robot"
     },
     {
-      skillName: "SQL-database",
+      skillName: "SQL",
       fontAwesomeClassname: "fas fa-database"
     }
   ],
@@ -121,7 +121,7 @@ const educationInfo = {
       logo: require("./assets/images/asucircle-logo.png"),
       subHeader: "MS Robotics and Autonomous Systems (Artificial Intelligence)",
       duration: "August 2023 - May 2025",
-      desc: "Courses: Frontiers in GenAI, Operational Deep Learning, ML accelerator design",
+      desc: "Relevant Courses: Frontiers in Generative AI, Operational Deep Learning, Machine Learning Accelerator Design, Perception in Robotics, Robotic Systems, Statistical Machine Learning",
       descBullets: [
         "Research aide for CIS Department. (Oct 23 - Present)",
         "Research aide at Wu Lab. (Aug 24 - Dec 24)"
@@ -132,7 +132,7 @@ const educationInfo = {
       logo: require("./assets/images/Mumbai-university-LOGO.jpg"),
       subHeader: "Bachelor of Engineering in Computer Engineering",
       duration: "August 2015 - May 2019",
-      desc: "Courses: Machine Learning, Artificial Intelligence",
+      desc: "Relevant Courses: Machine Learning, Artificial Intelligence",
       descBullets: []
     }
   ]
@@ -165,7 +165,7 @@ const workExperiences = {
   display: true,
   experience: [
     {
-      role: "AI/ML Software Engineering Intern",
+      role: "AI Software Engineer",
       company: "Stealth Startup",
       companylogo: require("./assets/images/stealthlogo.jpg"),
       date: "Feb 2025 – Present",
@@ -179,7 +179,7 @@ const workExperiences = {
       desc: "Conducting research on Explainable AI and adversarial robustness, integrating neuro-symbolic methods with object detection models.",
     },
     {
-      role: "AI Research Intern",
+      role: "AI Researcher",
       company: "RagaAI",
       companylogo: require("./assets/images/ragaailogo.jpeg"),
       date: "Jun 2024 – Aug 2024",
@@ -257,61 +257,42 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
-  subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+  title: emoji("Certifications 🏆"),
+  subtitle: "Professional credentials and completed courses",
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
-      subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+      title: "Robotics: Perception",
+      subtitle: "University of Pennsylvania",
       footerLink: [
         {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+          name: "Verify Credential",  // Consistent button name
+          url: "YOUR_CREDENTIAL_URL_HERE"
         }
       ]
     },
     {
-      title: "Google Assistant Action",
-      subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
+      title: "Deep Learning Specialization",
+      subtitle: "Coursera / DeepLearning.AI",
       footerLink: [
         {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
+          name: "Verify Credential",  // Same button name
+          url: "DEEP_LEARNING_CREDENTIAL_URL"
         }
       ]
     },
-
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
+      title: "TensorFlow Developer Certification",
+      subtitle: "Google",
       footerLink: [
-        {name: "Certification", url: ""},
         {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
+          name: "Verify Credential",  // Same button name
+          url: "TENSORFLOW_CREDENTIAL_URL"
         }
       ]
     }
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: true
 };
 
 // Blogs Section
