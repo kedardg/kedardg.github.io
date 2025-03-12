@@ -1,38 +1,31 @@
 @import "../../_globalColor";
 
+.main {
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0px auto;
+  margin-top: 4rem;
+}
+
 .skills-main-div {
   display: flex;
   width: 100%;
   overflow: hidden;
-  justify-content: flex-start; /* Changed from space-between to flex-start */
-  align-items: center;
-  gap: 40px; /* Increased gap for better spacing */
 }
 
 .skills-text-div {
-  flex: 2; /* Changed from 3 to 2 for better balance */
-  max-width: 1000px;
-  text-align: left;
-  padding: 20px;
-}
-
-.skills-main-div > * {
-  margin-bottom: 0;
+  width: 100%;
+  flex: 1 1 auto;
 }
 
 .skills-image-div {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 300px; /* Set a minimum width */
-  max-width: 500px; /* Increased from 250px */
-  min-height: 300px; /* Added minimum height */
-  max-height: 600px; /* Added maximum height */
+  flex: 0 1 40%;
+  margin-right: 2rem;
+  max-width: 40%;
   height: auto;
-  padding: 0; /* Removed padding */
-  border-radius: 10px; /* Rounded corners */
-  margin-left: 20px; /* Left margin instead of right */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Make the animation container larger */
@@ -75,15 +68,8 @@
     font-size: 20px;
   }
   
-  .skills-main-div {
-    gap: 30px;
-  }
-  
   .skills-image-div {
-    max-width: 400px;
-    min-width: 250px;
-    max-height: 500px; /* Adjusted height for medium screens */
-    min-height: 250px;
+    max-width: 40%;
   }
   
   .skills-image-div > div {
@@ -112,11 +98,14 @@
   .skills-main-div {
     flex-direction: column;
   }
+  
   .skills-text-div {
-    margin: 20px 0;
+    width: 100%;
   }
+  
   .skills-image-div {
-    display: none;
-    order: 2;
+    max-width: 100%;
+    margin-right: 0;
+    padding: 0 20px;
   }
 }

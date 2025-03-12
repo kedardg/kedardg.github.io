@@ -1,10 +1,28 @@
-import React, {useState, createRef} from "react";
+import React, {useState, createRef, useEffect} from "react";
 import "./ExperienceCard.scss";
 import ColorThief from "colorthief";
 
 export default function ExperienceCard({cardInfo, isDark}) {
   const [colorArrays, setColorArrays] = useState([]);
+  const [isExpanded, setIsExpanded] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
   const imgRef = createRef();
+
+  // Detect if device is mobile
+  useEffect(() => {
+    const checkIfMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    
+    // Check initially
+    checkIfMobile();
+    
+    // Add event listener for window resize
+    window.addEventListener('resize', checkIfMobile);
+    
+    // Clean up
+    return () => window.removeEventListener('resize', checkIfMobile);
+  }, []);
 
   function getColorArrays() {
     const colorThief = new ColorThief();
@@ -16,6 +34,12 @@ export default function ExperienceCard({cardInfo, isDark}) {
       ? null
       : "rgb(" + values.join(", ") + ")";
   }
+
+  const toggleExpand = () => {
+    if (isMobile) {
+      setIsExpanded(!isExpanded);
+    }
+  };
 
   const GetDescBullets = ({descBullets, isDark}) => {
     return descBullets
@@ -31,7 +55,12 @@ export default function ExperienceCard({cardInfo, isDark}) {
   };
 
   return (
-    <div className={isDark ? "experience-card-dark" : "experience-card"}>
+    <div 
+      className={`${isDark ? "experience-card-dark" : "experience-card"} ${isExpanded ? "expanded-card" : ""}`}
+      onMouseEnter={() => !isMobile && setIsExpanded(true)}
+      onMouseLeave={() => !isMobile && setIsExpanded(false)}
+      onClick={toggleExpand}
+    >
       <div style={{background: rgb(colorArrays)}} className="experience-banner">
         <div className="experience-blurred_div"></div>
         <div className="experience-div-company">
@@ -75,9 +104,20 @@ export default function ExperienceCard({cardInfo, isDark}) {
         >
           {cardInfo.desc}
         </p>
-        <ul>
-          <GetDescBullets descBullets={cardInfo.descBullets} isDark={isDark} />
-        </ul>
+        {cardInfo.descBullets && (
+          <div className={`experience-bullets-container ${isExpanded ? 'expanded' : ''}`}>
+            <ul>
+              <GetDescBullets descBullets={cardInfo.descBullets} isDark={isDark} />
+            </ul>
+          </div>
+        )}
+        
+        {isMobile && cardInfo.descBullets && cardInfo.descBullets.length > 0 && (
+          <div className="expand-indicator">
+            <span>{isExpanded ? "Show less" : "Show more"}</span>
+            <i className={`fas fa-chevron-${isExpanded ? "up" : "down"}`}></i>
+          </div>
+        )}
       </div>
     </div>
   );

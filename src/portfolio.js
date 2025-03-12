@@ -21,9 +21,9 @@ const illustration = {
 
 const greeting = {
   username: "Kedar G",
-  title: "Hi, I'm Kedar Gaikwad",
+  title: "Hi, I'm Kedar",
   subTitle: emoji(
-    "AI and Robotics Developer 🤖 | Experience in AI, Computer Vision, Language Models, Robotics and Edge AI."
+    "AI Engineer specializing in Computer Vision, LLMs & Intelligent Agents | Building production-ready AI systems that bridge research and real-world applications"
   ),
   resumeLink: "/resume.pdf",
   resumeDownload: true,
@@ -48,20 +48,378 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "AI AND ROBOTICS SPECIALIST WITH EXPERTISE IN DEEP LEARNING AND EDGE AI",
+  subTitle: "TURNING COMPLEX AI RESEARCH INTO PRODUCTION-READY SOLUTIONS",
   skills: [
     emoji(
-      "⚡ Develop and optimize deep learning models for computer vision and natural language processing"
+      "⚡ Develop and optimize production-ready deep learning models for computer vision and natural language processing"
     ),
-    emoji("⚡ Design and implement AI systems for edge devices and autonomous systems"),
+    emoji("⚡ Design and implement AI systems for edge devices and autonomous robotics platforms"),
     emoji(
-      "⚡ Create robust RAG frameworks and LLM applications with production-ready pipelines"
+      "⚡ Create robust RAG frameworks and LLM applications with enterprise-grade scalable pipelines"
     )
   ],
 
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
+  // Define tabs for the skills section
+  tabs: [
+    { id: 'core', label: 'Overview', fontAwesomeClassname: "fas fa-microchip" },
+    { id: 'cv', label: 'Computer Vision', fontAwesomeClassname: "fas fa-eye" },
+    { id: 'nlp', label: 'NLP & LLMs', fontAwesomeClassname: "fas fa-comment-alt" },
+    { id: 'edge', label: 'Edge AI', fontAwesomeClassname: "fas fa-bolt" },
+    { id: 'ml', label: 'Core ML', fontAwesomeClassname: "fas fa-database" },
+    { id: 'devops', label: 'DevOps', fontAwesomeClassname: "fas fa-server" }
+  ],
+  
+  // Detailed skills organized by category
+  skillsByCategory: {
+    core: [
+      {
+        category: "Primary AI Expertise",
+        skills: [
+          "Deep Learning", 
+          "Computer Vision",
+          "Large Language Models",
+          "Intelligent Agents",
+          "Edge AI & Computing",
+          "Retrieval-Augmented Generation"
+        ]
+      },
+      {
+        category: "Technical Frameworks & Libraries",
+        skills: [
+          "PyTorch", 
+          "TensorFlow", 
+          "LangChain", 
+          "CrewAI",
+          "OpenCV", 
+          "ONNX"
+        ]
+      },
+      {
+        category: "Infrastructure & Deployment",
+        skills: [
+          "NVIDIA Jetson",
+          "Docker", 
+          "GCP", 
+          "AWS",
+          "CI/CD Pipelines",
+          "API Development"
+        ]
+      },
+      {
+        category: "Implementation Specialties",
+        skills: [
+          "Model Optimization", 
+          "Production Deployment",
+          "Research to Production",
+          "Data Drift Detection",
+          "AI System Architecture"
+        ]
+      }
+    ],
+    cv: [
+      {
+        category: "CNN Architectures",
+        skills: [
+          "ResNet", 
+          "EfficientNet", 
+          "MobileNet", 
+          "YOLO", 
+          "VGG", 
+          "Mask-RCNN", 
+          "SqueezeNet"
+        ]
+      },
+      {
+        category: "Segmentation",
+        skills: [
+          "SAM 2", 
+          "UNET-R", 
+          "3D-segmentation", 
+          "Instance Segmentation", 
+          "Semantic Segmentation"
+        ]
+      },
+      {
+        category: "Neural Rendering",
+        skills: [
+          "NeRF", 
+          "Lightning NeRF", 
+          "Semantic-NeRF", 
+          "Scene Reconstruction"
+        ]
+      },
+      {
+        category: "Vision Applications",
+        skills: [
+          "Object Detection", 
+          "Face Recognition", 
+          "ADAS Systems", 
+          "Lane Detection", 
+          "Depth Estimation", 
+          "Traffic Sign Recognition"
+        ]
+      },
+      {
+        category: "Medical Imaging",
+        skills: [
+          "Tumor Detection", 
+          "CT Scan Analysis", 
+          "Pneumonia Detection", 
+          "Medical Diagnostics"
+        ]
+      },
+      {
+        category: "Visualization",
+        skills: [
+          "t-SNE", 
+          "UMAP", 
+          "PCA", 
+          "Embeddings Visualization", 
+          "Feature Maps"
+        ]
+      }
+    ],
+    nlp: [
+      {
+        category: "Large Language Models",
+        skills: [
+          "OpenAI GPT", 
+          "Claude", 
+          "Gemini", 
+          "Llama", 
+          "Mistral", 
+          "Gemma"
+        ]
+      },
+      {
+        category: "RAG Architecture",
+        skills: [
+          "Vector Databases", 
+          "Semantic Search", 
+          "Context Optimization", 
+          "Response Generation", 
+          "VectorDB"
+        ]
+      },
+      {
+        category: "LLM Frameworks",
+        skills: [
+          "LangChain", 
+          "LangGraph", 
+          "LlamaIndex", 
+          "CrewAI", 
+          "LangSmith", 
+          "Ollama"
+        ]
+      },
+      {
+        category: "Content Generation",
+        skills: [
+          "Document Generation", 
+          "Podcast Creation", 
+          "Script Writing", 
+          "Text Enhancement"
+        ]
+      },
+      {
+        category: "Audio Processing",
+        skills: [
+          "Text-to-Speech", 
+          "Google Neural Voice", 
+          "SSML", 
+          "Audio Enhancement"
+        ]
+      },
+      {
+        category: "LLM Evaluation",
+        skills: [
+          "Context Precision", 
+          "Answer Relevancy", 
+          "Similarity Metrics", 
+          "Faithfulness"
+        ]
+      }
+    ],
+    edge: [
+      {
+        category: "Embedded Systems",
+        skills: [
+          "NVIDIA Jetson", 
+          "Ambarella CV22", 
+          "Raspberry Pi", 
+          "Microcontrollers"
+        ]
+      },
+      {
+        category: "Model Optimization",
+        skills: [
+          "Quantization", 
+          "Pruning", 
+          "Layer Fusion", 
+          "Sparsity", 
+          "Knowledge Distillation"
+        ]
+      },
+      {
+        category: "FPGA Integration",
+        skills: [
+          "FPGA Programming", 
+          "Hardware Acceleration", 
+          "Custom DL Frameworks"
+        ]
+      },
+      {
+        category: "Real-time Inference",
+        skills: [
+          "Batch Processing", 
+          "Pipeline Optimization", 
+          "Memory Management", 
+          "Latency Reduction"
+        ]
+      },
+      {
+        category: "Edge Applications",
+        skills: [
+          "ADAS", 
+          "Surveillance Systems", 
+          "Automated Checkout", 
+          "Smart Cameras"
+        ]
+      },
+      {
+        category: "Edge-Cloud Integration",
+        skills: [
+          "Federated Learning", 
+          "Distributed Systems", 
+          "Selective Data Transmission"
+        ]
+      }
+    ],
+    ml: [
+      {
+        category: "ML Frameworks",
+        skills: [
+          "PyTorch", 
+          "TensorFlow", 
+          "Scikit-learn", 
+          "ONNX", 
+          "TensorRT", 
+          "OpenVino"
+        ]
+      },
+      {
+        category: "Neural Architectures",
+        skills: [
+          "Transformers", 
+          "Autoencoders", 
+          "VAEs", 
+          "GANs", 
+          "RNNs/LSTMs", 
+          "Attention Mechanisms"
+        ]
+      },
+      {
+        category: "Training Techniques",
+        skills: [
+          "Transfer Learning", 
+          "Fine-tuning", 
+          "Distributed Training", 
+          "Data Augmentation", 
+          "Self-supervised Learning"
+        ]
+      },
+      {
+        category: "Model Evaluation",
+        skills: [
+          "Performance Metrics", 
+          "Cross-validation", 
+          "Confusion Matrix", 
+          "ROC Curves", 
+          "Precision-Recall"
+        ]
+      },
+      {
+        category: "Research Implementation",
+        skills: [
+          "Paper Reproduction", 
+          "State-of-the-art Implementations", 
+          "Research Adaptation", 
+          "Performance Benchmarking"
+        ]
+      },
+      {
+        category: "AI Quality",
+        skills: [
+          "Drift Detection", 
+          "Anomaly Detection", 
+          "OOD Detection", 
+          "Adversarial Testing"
+        ]
+      }
+    ],
+    devops: [
+      {
+        category: "Programming Languages",
+        skills: [
+          "Python", 
+          "C++", 
+          "C", 
+          "SQL", 
+          "JavaScript"
+        ]
+      },
+      {
+        category: "Cloud Platforms",
+        skills: [
+          "GCP", 
+          "AWS", 
+          "Cloud Run", 
+          "Compute Engine", 
+          "S3/GCS"
+        ]
+      },
+      {
+        category: "DevOps & MLOps",
+        skills: [
+          "Docker", 
+          "CI/CD", 
+          "GitHub", 
+          "Apache Airflow", 
+          "Kubernetes"
+        ]
+      },
+      {
+        category: "API Development",
+        skills: [
+          "RESTful APIs", 
+          "FastAPI", 
+          "Flask", 
+          "API Gateway", 
+          "Microservices"
+        ]
+      },
+      {
+        category: "Data Engineering",
+        skills: [
+          "ETL Pipelines", 
+          "Data Extraction", 
+          "Web Scraping", 
+          "Database Management"
+        ]
+      },
+      {
+        category: "Monitoring & Logging",
+        skills: [
+          "Model Monitoring", 
+          "Performance Tracking", 
+          "Error Logging", 
+          "Alerting Systems"
+        ]
+      }
+    ]
+  },
 
+  // Keep existing softwareSkills for compatibility
   softwareSkills: [
     {
       skillName: "python",
@@ -108,7 +466,7 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fas fa-database"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
 // Education Section
@@ -170,6 +528,12 @@ const workExperiences = {
       companylogo: require("./assets/images/stealthlogo.jpg"),
       date: "Feb 2025 – Present",
       desc: "Leading core AI application development, building LLM-enhanced web scraping pipelines, and implementing document processing services with GCP Cloud Run.",
+      descBullets: [
+        "As the first AI/ML developer, led the creation of core application functionalities.",
+        "Developed a robust web scraping pipeline for data extraction, utilizing LLM APIs for metadata enhancement and automating database uploads. Deployed and orchestrated the scraper using Apache Airflow for continuous monitoring and scheduling.",
+        "Designed and implemented AI-driven document enhancement endpoints, deploying them via GCP Cloud Run. Integrated with GitHub for streamlined CI/CD, ensuring rapid and reliable deployments.",
+        "Created an audio podcast generator leveraging Gemini 1.5 Pro within a Retrieval-Augmented Generation framework. Integrated Google Text-to-Speech Neural and Studio voice models, employing Speech Synthesis Markup Language (SSML) for natural and expressive voice output."
+      ]
     },
     {
       role: "Research Assistant",
@@ -177,6 +541,12 @@ const workExperiences = {
       companylogo: require("./assets/images/teuvoent-logo.jpeg"),
       date: "Oct 2023 – Present",
       desc: "Conducting research on Explainable AI and adversarial robustness, integrating neuro-symbolic methods with object detection models.",
+      descBullets: [
+        "Integrated neuro-symbolic approaches with Object Detection models to create Explainable AI (XAI) solutions, enhancing interpretability and increased object detection recall by 30% in military geospatial imaging applications",
+        "Secured an STTR Phase 1 Air Force/Space Force contract, gaining recognition as featured by W. P. Carey News.",
+        "Engineered robust stress testing framework utilizing Meta SAM 2 for precise segmentation, enabling targeted adversarial patch and camouflage attacks that identified and addressed key vulnerabilities in mission-critical AI systems",
+        "Optimized XAI models for Nvidia Jetson edge deployment through quantization, pruning, and layer fusion, maintaining accuracy while enabling real-time inference capabilities"
+      ]
     },
     {
       role: "AI Researcher",
@@ -184,6 +554,11 @@ const workExperiences = {
       companylogo: require("./assets/images/ragaailogo.jpeg"),
       date: "Jun 2024 – Aug 2024",
       desc: "Developed observability tools for LLM applications and implemented evaluation metrics for LLM and RAG system performance measurement.",
+      descBullets: [
+        "Built an observability tool, RagaAI Catalyst to provide trace recording inside RAG applications with one-click deployable solution allowing fine-tuning and evaluation for LLM applications",
+        "Collaborated on creation of Raga LLM Hub, employing metrics to evaluate LLMs, and established critical guardrails for LLMs and RAG applications, culminating in a robust open-source framework enriched with over 100 comprehensive tests",
+        "Benchmarked and optimized custom RAG pipelines for prompt response quality across Llama, Gemma, and Mistral models, significantly reducing token costs while enabling engineering teams to identify the most cost-effective solutions for deployment."
+      ]
     },
     {
       role: "Senior Data Scientist",
@@ -191,6 +566,25 @@ const workExperiences = {
       companylogo: require("./assets/images/ragaailogo.jpeg"),
       date: "Jan 2022 – Aug 2023",
       desc: "Led implementation of computer vision systems and anomaly detection frameworks, contributing to RagaAI's platform development.",
+      descBullets: [
+        "Led implementation of custom autoencoder network for drift tracking and outlier detection in ADAS, achieving 95% test accuracy which was featured at 2023 CES in Las Vegas",
+        "Collaborated on creation of RagaAI Platform for computer vision drift detection using CNNs and anomaly detection, directly contributing to securing $4.7 million in seed funding",
+        "Performed research for Out-of-Distribution (OOD) detection and AI stress testing in medical imaging, retail checkout, ADAS, and market research. This helped the company scale and reach out to 8 organizations.",
+        "Designed and deployed an API pipeline with dashboard for interactive visualization and clustering of DNN embeddings using techniques like t-SNE, UMAP and PCA, enabling real-time analysis and interpretation of high-dimensional data.",
+        "Implemented Maximum Mean Discrepancy (MMD) and Kolmogorov-Smirnov tests for drift detection in image datasets, reducing undetected data drift and enhancing model stability.",
+        "Leveraged AE, VAE, Variational Auto-Encoding Gaussian Mixture Model (VAEGMM) algorithms to identify outliers in high-dimensional datasets, improving anomaly detection accuracy by 40%"
+      ]
+    },
+    {
+      role: "Deep Learning Engineer",
+      company: "Biocliq Technologies",
+      companylogo: require("./assets/images/facebookLogo.png"), // You'll need to replace this with actual Biocliq logo
+      date: "Oct 2021 – Jan 2022",
+      desc: "Implemented advanced medical imaging solutions using deep learning techniques for healthcare applications.",
+      descBullets: [
+        "Implemented model for 3D-segmentation on Brain CT-Scans to detect cancerous tumors based on UNET-R architecture improving the DICE score over existing models by 10%.",
+        "Extracted inferences and results of CT scan reports of pneumonia patients from PDF files using camelot to create a dataset for pneumonia categorization and detection during COVID."
+      ]
     },
     {
       role: "Deep Learning Engineer",
@@ -198,6 +592,14 @@ const workExperiences = {
       companylogo: require("./assets/images/Uncanny_Logo_Transp.png"),
       date: "Jun 2019 – Jul 2021",
       desc: "Optimized deep learning models for edge-AI applications, focusing on model compression and optimization for FPGA deployment.",
+      descBullets: [
+        "Improved verification environment for system-level and intra-module testing of a custom DL framework for an edge-AI FPGA device, resulting in better memory utilization and tenfold faster output generation",
+        "Streamlined FPGA device performance by adapting seven major neural network architectures from eight DL frameworks to a custom framework, significantly reducing model sizes by 50% and enhancing operational speed.",
+        "Conducted ongoing research in computer vision and consulted clients on further developing the custom DL framework.",
+        "Streamlined and deployed an annotation tool that automated annotation processes, resulting in a 40% increase in throughput and equipping the annotation team with essential tool proficiency",
+        "Engineered cutting-edge face mask recognition model with the industry-specific EfficientNet series, customized for lower resolution images to combat COVID challenges, achieving an exceptional 97% accuracy rate",
+        "Trained boom barrier monitoring model with 95% accuracy for smooth operations in automated parking checkout."
+      ]
     }
   ]
 };
@@ -361,11 +763,11 @@ const resumeSection = {
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
+  title: emoji("Let's Build Something Together ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  // number: "+92-0000000000",
-  email_address: "kedar.gaikwad@asu.edu"
+    "Interested in bringing cutting-edge AI to your project? Let's discuss how my expertise can help.",
+  email_address: "kedar.gaikwad@asu.edu",
+  ctaButton: "Start a Conversation" // Add this if your template supports it
 };
 
 // Twitter Section
