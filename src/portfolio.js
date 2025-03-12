@@ -664,22 +664,32 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "HPC Shiksha : Basics of High Performance Computing",
-      subtitle: "National Supercomputing Mission (NSM) - India",
+      title: "Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization",
+      subtitle: "DeepLearning.AI",
       footerLink: [
         {
           name: "Verify Credential",
-          url: "https://www.iitgoa.ac.in/hpcshiksha/result.php" // You can update this later
+          url: "https://www.coursera.org/account/accomplishments/verify/XRYUTMTLEB2U" // You can update this later
         }
       ]
     },
     {
-      title: "MATLAB for Data Processing and Visualization",
-      subtitle: "MathWorks",
+      title: "Robotics: Perception",
+      subtitle: "University of Pennsylvania/ Coursera",
       footerLink: [
         {
           name: "Verify Credential",
-          url: "https://matlabacademy.mathworks.com/progress/share/certificate.html?id=c7c31063-9678-4c43-b549-f3185eded954&" // You can update this later
+          url: "https://www.coursera.org/account/accomplishments/verify/JYSVGKCJC4A6"
+        }
+      ]
+    },
+    {
+      title: "Deep Learning Specialization",
+      subtitle: "Coursera / DeepLearning.AI",
+      footerLink: [
+        {
+          name: "Verify Credential",
+          url: "https://www.coursera.org/account/accomplishments/specialization/JY8W74JHJ9SZ"
         }
       ]
     },
@@ -690,6 +700,16 @@ const achievementSection = {
         {
           name: "Verify Credential",
           url: "https://matlabacademy.mathworks.com/progress/share/certificate.html?id=9e455c69-6cf8-4f06-8144-6adb5851a7fd&" // You can update this later
+        }
+      ]
+    },
+    {
+      title: "MATLAB for Data Processing and Visualization",
+      subtitle: "MathWorks",
+      footerLink: [
+        {
+          name: "Verify Credential",
+          url: "https://matlabacademy.mathworks.com/progress/share/certificate.html?id=c7c31063-9678-4c43-b549-f3185eded954&" // You can update this later
         }
       ]
     },
@@ -724,35 +744,16 @@ const achievementSection = {
       ]
     },
     {
-      title: "Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization",
-      subtitle: "DeepLearning.AI",
+      title: "HPC Shiksha : Basics of High Performance Computing",
+      subtitle: "National Supercomputing Mission (NSM) - India",
       footerLink: [
         {
           name: "Verify Credential",
-          url: "https://www.coursera.org/account/accomplishments/verify/XRYUTMTLEB2U" // You can update this later
+          url: "https://www.iitgoa.ac.in/hpcshiksha/result.php" // You can update this later
         }
       ]
     },
-    {
-      title: "Robotics: Perception",
-      subtitle: "University of Pennsylvania/ Coursera",
-      footerLink: [
-        {
-          name: "Verify Credential",
-          url: "https://www.coursera.org/account/accomplishments/verify/JYSVGKCJC4A6"
-        }
-      ]
-    },
-    {
-      title: "Deep Learning Specialization",
-      subtitle: "Coursera / DeepLearning.AI",
-      footerLink: [
-        {
-          name: "Verify Credential",
-          url: "https://www.coursera.org/account/accomplishments/specialization/JY8W74JHJ9SZ"
-        }
-      ]
-    },
+
     // {
     //   title: "TensorFlow Developer Certification",
     //   subtitle: "Google",
