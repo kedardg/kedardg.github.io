@@ -835,8 +835,7 @@ const resumeSection = {
 
 const contactInfo = {
   title: emoji("Let's Build Something Together ☎️"),
-  subtitle:
-    "Interested in bringing cutting-edge AI to your project? Let's discuss how my expertise can help.",
+  subtitle: "",
   email_address: "",
   ctaButton: "Start a Conversation" // Add this if your template supports it
 };

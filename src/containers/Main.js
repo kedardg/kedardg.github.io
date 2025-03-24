@@ -64,8 +64,8 @@ const Main = () => {
             <Talks />
             <Twitter />
             <Podcast />
-            <Profile />
             <Contact />
+            <Profile />
             <Footer />
             <ScrollToTopButton />
           </>

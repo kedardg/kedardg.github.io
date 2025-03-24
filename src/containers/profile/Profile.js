@@ -1,6 +1,5 @@
 import React, {useState, useEffect, lazy, Suspense} from "react";
 import {openSource} from "../../portfolio";
-import Contact from "../contact/Contact";
 import Loading from "../loading/Loading";
 
 const renderLoader = () => <Loading />;
@@ -27,7 +26,7 @@ export default function Profile() {
           })
           .catch(function (error) {
             console.error(
-              `${error} (because of this error GitHub contact section could not be displayed. Contact section has reverted to default)`
+              `${error} (because of this error GitHub contact section could not be displayed.)`
             );
             setProfileFunction("Error");
             openSource.showGithubProfile = "false";
@@ -47,6 +46,6 @@ export default function Profile() {
       </Suspense>
     );
   } else {
-    return <Contact />;
+    return null;
   }
 }
