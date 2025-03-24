@@ -578,7 +578,7 @@ const workExperiences = {
     {
       role: "Deep Learning Engineer",
       company: "Biocliq Technologies",
-      companylogo: require("./assets/images/facebookLogo.png"), // You'll need to replace this with actual Biocliq logo
+      companylogo: require("./assets/images/biocliq.jpg"),
       date: "Oct 2021 – Jan 2022",
       desc: "Implemented advanced medical imaging solutions using deep learning techniques for healthcare applications.",
       descBullets: [
@@ -609,7 +609,7 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  display: true // Set to true to show GitHub projects
 };
 
 // Some big projects you have worked on
@@ -618,28 +618,28 @@ const bigProjects = {
   title: "Projects",
   subtitle: "SIGNIFICANT AI AND ROBOTICS PROJECTS I'VE DEVELOPED",
   projects: [
-    {
-      image: require("./assets/images/facebookLogo.png"),
-      projectName: "Job Application Enhancement Tool",
-      projectDesc: "AI-powered tool to refine resumes and cover letters by analyzing job descriptions and extracting key qualifications using multiple LLM APIs.",
-      footerLink: [
-        {
-          name: "GitHub Repository",
-          url: "https://github.com/kedardg/job-applications"
-        }
-      ]
-    },
-    {
-      image: require("./assets/images/facebookLogo.png"),
-      projectName: "Lightning NeRF Extension",
-      projectDesc: "Enhanced the state-of-the-art Lightning NeRF framework for autonomous driving by incorporating semantic information, improving PSNR by 10%.",
-      footerLink: [
-        {
-          name: "Project Details",
-          url: "#"
-        }
-      ]
-    },
+    // {
+    //   image: require("./assets/images/facebookLogo.png"),
+    //   projectName: "Job Application Enhancement Tool",
+    //   projectDesc: "AI-powered tool to refine resumes and cover letters by analyzing job descriptions and extracting key qualifications using multiple LLM APIs.",
+    //   footerLink: [
+    //     {
+    //       name: "GitHub Repository",
+    //       url: "https://github.com/kedardg/job-applications"
+    //     }
+    //   ]
+    // },
+    // {
+    //   image: require("./assets/images/facebookLogo.png"),
+    //   projectName: "Lightning NeRF Extension",
+    //   projectDesc: "Enhanced the state-of-the-art Lightning NeRF framework for autonomous driving by incorporating semantic information, improving PSNR by 10%.",
+    //   footerLink: [
+    //     {
+    //       name: "Project Details",
+    //       url: "#"
+    //     }
+    //   ]
+    // },
     // {
     //   image: require("./assets/images/stressTesting.png"),
     //   projectName: "AI Stress Testing Framework",
@@ -652,7 +652,7 @@ const bigProjects = {
       //   ]
       // }
   ],
-  display: true
+  display: false // Set false to hide this section
 };
 
 // Achievement Section
@@ -837,7 +837,7 @@ const contactInfo = {
   title: emoji("Let's Build Something Together ☎️"),
   subtitle:
     "Interested in bringing cutting-edge AI to your project? Let's discuss how my expertise can help.",
-  email_address: "kedar.gaikwad@asu.edu",
+  email_address: "",
   ctaButton: "Start a Conversation" // Add this if your template supports it
 };
 

@@ -21,8 +21,15 @@ export default function Contact() {
           
           <div className="contact-content">
             <div className="contact-left-section">
-              <p className="contact-email">{contactInfo.email_address}</p>
-              <SocialMedia />
+              <div className="contact-message">
+                <h3>Let's Talk</h3>
+                <p>Looking to collaborate on an AI project? Have questions about my experience or expertise? I'm excited to hear from you.</p>
+                <p>Based in Arizona, available for remote opportunities worldwide.</p>
+              </div>
+              <div className="contact-social">
+                <h3>Connect With Me</h3>
+                <SocialMedia />
+              </div>
             </div>
             
             <div className="contact-right-section">

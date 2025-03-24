@@ -1,6 +1,5 @@
 import React, { useState, useContext } from "react";
 import StyleContext from "../../contexts/StyleContext";
-import emoji from "react-easy-emoji";
 import "./TabbedSkills.scss";
 
 const TabbedSkills = ({ skillsSection }) => {
