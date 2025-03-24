@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.79fdea5b.css",
-    "main.js": "/static/js/main.00513d73.js",
+    "main.css": "/static/css/main.e5ab29c3.css",
+    "main.js": "/static/js/main.6581c419.js",
     "static/css/487.bb36206c.chunk.css": "/static/css/487.bb36206c.chunk.css",
     "static/js/487.a78e3aff.chunk.js": "/static/js/487.a78e3aff.chunk.js",
     "static/css/990.c5c5ed50.chunk.css": "/static/css/990.c5c5ed50.chunk.css",
@@ -12,18 +12,17 @@
     "static/media/Mumbai-university-LOGO.jpg": "/static/media/Mumbai-university-LOGO.20650c66e2dcefebea20.jpg",
     "static/media/Agustina.woff": "/static/media/Agustina.eb0c59dda4cc308cba96.woff",
     "static/media/teuvoent-logo.jpeg": "/static/media/teuvoent-logo.bfb4d3df474706d0ba95.jpeg",
-    "static/media/facebookLogo.png": "/static/media/facebookLogo.f46d68b24e9b4f73ee8b.png",
     "index.html": "/index.html",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
-    "main.79fdea5b.css.map": "/static/css/main.79fdea5b.css.map",
-    "main.00513d73.js.map": "/static/js/main.00513d73.js.map",
+    "main.e5ab29c3.css.map": "/static/css/main.e5ab29c3.css.map",
+    "main.6581c419.js.map": "/static/js/main.6581c419.js.map",
     "487.bb36206c.chunk.css.map": "/static/css/487.bb36206c.chunk.css.map",
     "487.a78e3aff.chunk.js.map": "/static/js/487.a78e3aff.chunk.js.map",
     "990.c5c5ed50.chunk.css.map": "/static/css/990.c5c5ed50.chunk.css.map",
     "990.989b755f.chunk.js.map": "/static/js/990.989b755f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.79fdea5b.css",
-    "static/js/main.00513d73.js"
+    "static/css/main.e5ab29c3.css",
+    "static/js/main.6581c419.js"
   ]
 }
