@@ -202,6 +202,15 @@ Note: Don't use `@` symbol when adding username.
 When you are done with the setup, you should host your website online.
 We highly recommend to read through the [Deploying on GitHub Pages](https://create-react-app.dev/docs/deployment/#github-pages) docs for React.
 
+#### Quick Deployment
+For instant deployment, run the following command:
+
+```bash
+npm run deploy
+```
+
+This command builds your app and deploys it directly to GitHub Pages using your configured settings.
+
 #### Configuring GitHub Actions (Recommended)
 First you should enable, GitHub Actions for the repository you use.
 
