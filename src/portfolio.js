@@ -156,7 +156,7 @@ const skillsSection = {
           "ADAS Systems", 
           "Lane Detection", 
           "Depth Estimation", 
-          "Traffic Sign Recognition"
+
         ]
       },
       {
@@ -233,7 +233,7 @@ const skillsSection = {
       {
         category: "LLM Evaluation",
         skills: [
-          "Context Precision", 
+          "Guardrails", 
           "Answer Relevancy", 
           "Similarity Metrics", 
           "Faithfulness"
@@ -364,8 +364,8 @@ const skillsSection = {
           "Python", 
           "C++", 
           "C", 
-          "SQL", 
-          "JavaScript"
+          "SQL",
+          "MongoDB" 
         ]
       },
       {
@@ -526,7 +526,7 @@ const workExperiences = {
       role: "AI Software Engineer",
       company: "Stealth Startup",
       companylogo: require("./assets/images/stealthlogo.jpg"),
-      date: "Feb 2025 – Present",
+      date: "Dec 2024 – Present",
       desc: "Leading core AI application development, building LLM-enhanced web scraping pipelines, and implementing document processing services with GCP Cloud Run.",
       descBullets: [
         "As the first AI/ML developer, led the creation of core application functionalities.",
@@ -608,7 +608,7 @@ const workExperiences = {
 To know how to get github key look at readme.md */
 
 const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
+  showGithubProfile: "false", // Set true or false to show Contact profile using Github, defaults to true
   display: true // Set to true to show GitHub projects
 };
 
@@ -834,7 +834,7 @@ const resumeSection = {
 };
 
 const contactInfo = {
-  title: emoji("Let's Build Something Together ☎️"),
+  title: emoji("Let's Build Something Together 🚀"),
   subtitle: "",
   email_address: "",
   ctaButton: "Start a Conversation" // Add this if your template supports it

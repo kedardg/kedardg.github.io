@@ -19,7 +19,7 @@ export default function Contact() {
           <div className="contact-content">
             <div className="contact-left-section">
               <div className="contact-message">
-                <h3>Let's Talk</h3>
+                <h3>Let's Talk ☎️</h3>
                 <p>Looking to collaborate on an AI project? Have questions about my experience or expertise? I'm excited to hear from you.</p>
                 <p>Based in Arizona, available for remote opportunities worldwide.</p>
                 <div className="contact-social">

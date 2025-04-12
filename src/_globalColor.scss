@@ -15,9 +15,13 @@ $subTitle: #868e96;
 $cardSubtitle: #666666;
 $talkCardSubTitle: #7f8287;
 $blogCardTitleColor: #262626;
+$textPrimary: #333333;
+$textSecondary: #555555;
 
 // text color dark theme
 $textColorDark: #ffffff;
+$textPrimaryDark: #ffffff;
+$textSecondaryDark: #cccccc;
 
 // toggle switch colors
 $toggleCheck: #2196f3;
@@ -36,8 +40,17 @@ $lightBackground1: #fff;
 $lightBackground2: rgb(255, 255, 255);
 $lightBackground3: #f5f2f4;
 $blogCardContainerColor: #586069;
+$backgroundPrimary: #ffffff;
+$backgroundTertiary: #f8f8f8;
+$shadowLight: rgba(0, 0, 0, 0.05);
+
 // dark background colors
 $darkBackground: #171c28;
+$backgroundSecondaryDark: #1e2839;
+$backgroundTertiaryDark: #242f41;
+
+// primary color
+$primaryColor: $buttonColor;
 
 // light theme box shadows
 $lightBoxShadowDark: rgba(0, 0, 0, 0.2);

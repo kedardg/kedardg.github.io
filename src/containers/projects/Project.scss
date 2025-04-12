@@ -2,6 +2,7 @@
   font-size: 52px;
   font-weight: 400;
   line-height: normal;
+  margin-top: 2rem;
 }
 
 .startup-project-text img {
@@ -13,6 +14,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 1rem 1rem;
+  margin-top: 1rem;
 }
 
 /* Media Query */
