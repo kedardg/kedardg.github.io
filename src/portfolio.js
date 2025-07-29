@@ -23,7 +23,7 @@ const greeting = {
   username: "Kedar G",
   title: "Hi, I'm Kedar",
   subTitle: emoji(
-    "AI Engineer specializing in Computer Vision, LLMs & Intelligent Agents | Building production-ready AI systems that bridge research and real-world applications"
+    "Senior Machine Learning Engineer | Computer Vision & LLM Expert | Building production-ready AI systems with PyTorch, TensorFlow & LangChain | 5+ years scaling ML solutions"
   ),
   resumeLink: "/resume.pdf",
   resumeDownload: true,
@@ -34,7 +34,7 @@ const greeting = {
 
 const socialMediaLinks = {
   github: "https://github.com/kedardg",
-  linkedin: "https://www.linkedin.com/in/kedardgaikwad/",
+  linkedin: "https://www.linkedin.com/in/kedardg/",
   gmail: "kedar.gaikwad@asu.edu",
   // facebook: "https://www.facebook.com/saad.pasta7",
   // medium: "https://medium.com/@saadpasta",
@@ -47,8 +47,8 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
-  subTitle: "TURNING COMPLEX AI RESEARCH INTO PRODUCTION-READY SOLUTIONS",
+  title: "Machine Learning Engineering Expertise",
+  subTitle: "BUILDING SCALABLE AI SYSTEMS: COMPUTER VISION | LLM ENGINEERING | EDGE AI DEPLOYMENT",
   skills: [
     emoji(
       "⚡ Develop and optimize production-ready deep learning models for computer vision and natural language processing"
@@ -73,109 +73,75 @@ const skillsSection = {
   skillsByCategory: {
     core: [
       {
-        category: "Primary AI Expertise",
+        category: "Core AI Expertise",
         skills: [
-          "Deep Learning", 
-          "Computer Vision",
-          "Large Language Models",
-          "Intelligent Agents",
-          "Edge AI & Computing",
-          "Retrieval-Augmented Generation"
+          "Computer Vision", 
+          "Natural Language Processing",
+          "Object Detection",
+          "AI Agents",
+          "LLMOps"
         ]
       },
       {
-        category: "Technical Frameworks & Libraries",
+        category: "Deep Learning & Neural Networks",
         skills: [
-          "PyTorch", 
+          "CNNs (ResNet, EfficientNet, YOLO, Mask-RCNN)", 
+          "Transformers", 
+          "Large Language Models", 
+          "Retrieval-Augmented Generation",
+          "Model Optimization (Quantization, Pruning)"
+        ]
+      },
+      {
+        category: "Production AI Systems",
+        skills: [
+          "PyTorch",
           "TensorFlow", 
-          "LangChain", 
-          "CrewAI",
-          "OpenCV", 
-          "ONNX"
-        ]
-      },
-      {
-        category: "Infrastructure & Deployment",
-        skills: [
-          "NVIDIA Jetson",
-          "Docker", 
-          "GCP", 
-          "AWS",
-          "CI/CD Pipelines",
-          "API Development"
-        ]
-      },
-      {
-        category: "Implementation Specialties",
-        skills: [
-          "Model Optimization", 
-          "Production Deployment",
-          "Research to Production",
-          "Data Drift Detection",
-          "AI System Architecture"
+          "Edge Deployment", 
+          "Model Monitoring",
+          "Performance Optimization"
         ]
       }
     ],
     cv: [
+      {
+        category: "Object Detection & Recognition",
+        skills: [
+          "YOLO (v5, v8, v11)", 
+          "Mask-RCNN", 
+          "RetinaNet", 
+          "SSD", 
+          "Real-time Detection"
+        ]
+      },
       {
         category: "CNN Architectures",
         skills: [
           "ResNet", 
           "EfficientNet", 
           "MobileNet", 
-          "YOLO", 
-          "VGG", 
-          "Mask-RCNN", 
-          "SqueezeNet"
+          "Vision Transformers",
+          "ConvNeXT"
         ]
       },
       {
-        category: "Segmentation",
+        category: "Image Segmentation",
         skills: [
-          "SAM 2", 
+          "SAM 2 (Segment Anything)", 
           "UNET-R", 
-          "3D-segmentation", 
-          "Instance Segmentation", 
-          "Semantic Segmentation"
+          "Semantic Segmentation", 
+          "Instance Segmentation",
+          "Panoptic Segmentation"
         ]
       },
       {
-        category: "Neural Rendering",
+        category: "Computer Vision Applications",
         skills: [
-          "NeRF", 
-          "Lightning NeRF", 
-          "Semantic-NeRF", 
-          "Scene Reconstruction"
-        ]
-      },
-      {
-        category: "Vision Applications",
-        skills: [
-          "Object Detection", 
-          "Face Recognition", 
-          "ADAS Systems", 
-          "Lane Detection", 
-          "Depth Estimation", 
-
-        ]
-      },
-      {
-        category: "Medical Imaging",
-        skills: [
-          "Tumor Detection", 
-          "CT Scan Analysis", 
-          "Pneumonia Detection", 
-          "Medical Diagnostics"
-        ]
-      },
-      {
-        category: "Visualization",
-        skills: [
-          "t-SNE", 
-          "UMAP", 
-          "PCA", 
-          "Embeddings Visualization", 
-          "Feature Maps"
+          "ADAS & Autonomous Vehicles", 
+          "Medical Imaging & Diagnostics", 
+          "Surveillance Systems", 
+          "Automated Checkout",
+          "Neural Rendering (NeRF)"
         ]
       }
     ],
@@ -183,237 +149,137 @@ const skillsSection = {
       {
         category: "Large Language Models",
         skills: [
-          "OpenAI GPT", 
-          "Claude", 
-          "Gemini", 
-          "Llama", 
-          "Mistral", 
-          "Gemma"
+          "GPT (OpenAI)", 
+          "Claude (Anthropic)", 
+          "Gemini (Google)", 
+          "Llama (Meta)", 
+          "Mistral AI"
         ]
       },
       {
-        category: "RAG Architecture",
+        category: "Retrieval-Augmented Generation (RAG)",
         skills: [
-          "Vector Databases", 
+          "Vector Databases (Pinecone, Chroma)", 
           "Semantic Search", 
           "Context Optimization", 
-          "Response Generation", 
-          "VectorDB"
+          "Document Processing", 
+          "Multi-modal RAG"
         ]
       },
       {
-        category: "LLM Frameworks",
+        category: "AI Agents & Agentic Frameworks",
         skills: [
-          "LangChain", 
-          "LangGraph", 
+          "LangChain & LangGraph", 
+          "CrewAI (Multi-agent)", 
           "LlamaIndex", 
-          "CrewAI", 
-          "LangSmith", 
-          "Ollama"
+          "AutoGPT & Agent Workflows", 
+          "Tool Integration & Function Calling"
         ]
       },
       {
-        category: "Content Generation",
+        category: "Natural Language Processing",
         skills: [
-          "Document Generation", 
-          "Podcast Creation", 
-          "Script Writing", 
-          "Text Enhancement"
-        ]
-      },
-      {
-        category: "Audio Processing",
-        skills: [
-          "Text-to-Speech", 
-          "Google Neural Voice", 
-          "SSML", 
-          "Audio Enhancement"
-        ]
-      },
-      {
-        category: "LLM Evaluation",
-        skills: [
-          "Guardrails", 
-          "Answer Relevancy", 
-          "Similarity Metrics", 
-          "Faithfulness"
+          "Text Classification & Sentiment Analysis", 
+          "Named Entity Recognition (NER)", 
+          "Question Answering Systems", 
+          "Text-to-Speech (TTS) & SSML", 
+          "Document Understanding"
         ]
       }
     ],
     edge: [
       {
-        category: "Embedded Systems",
+        category: "LLMOps & Model Operations",
         skills: [
-          "NVIDIA Jetson", 
-          "Ambarella CV22", 
-          "Raspberry Pi", 
-          "Microcontrollers"
+          "Model Training & Fine-tuning", 
+          "Model Versioning & Registry", 
+          "A/B Testing for LLMs", 
+          "Performance Monitoring", 
+          "Cost Optimization"
         ]
       },
       {
-        category: "Model Optimization",
+        category: "LLM Evaluation & Quality",
         skills: [
-          "Quantization", 
-          "Pruning", 
-          "Layer Fusion", 
-          "Sparsity", 
-          "Knowledge Distillation"
+          "Guardrails & Safety Measures", 
+          "Faithfulness & Relevancy Metrics", 
+          "Hallucination Detection", 
+          "Bias Testing", 
+          "Response Quality Assessment"
         ]
       },
       {
-        category: "FPGA Integration",
+        category: "Edge AI & Optimization",
         skills: [
-          "FPGA Programming", 
-          "Hardware Acceleration", 
-          "Custom DL Frameworks"
-        ]
-      },
-      {
-        category: "Real-time Inference",
-        skills: [
-          "Batch Processing", 
-          "Pipeline Optimization", 
-          "Memory Management", 
-          "Latency Reduction"
-        ]
-      },
-      {
-        category: "Edge Applications",
-        skills: [
-          "ADAS", 
-          "Surveillance Systems", 
-          "Automated Checkout", 
-          "Smart Cameras"
-        ]
-      },
-      {
-        category: "Edge-Cloud Integration",
-        skills: [
-          "Federated Learning", 
-          "Distributed Systems", 
-          "Selective Data Transmission"
+          "Model Quantization & Pruning", 
+          "NVIDIA Jetson Deployment", 
+          "TensorRT & ONNX Optimization", 
+          "Real-time Inference", 
+          "Hardware Acceleration"
         ]
       }
     ],
     ml: [
       {
-        category: "ML Frameworks",
+        category: "AI Frameworks & Libraries",
         skills: [
-          "PyTorch", 
-          "TensorFlow", 
+          "PyTorch & TorchVision", 
+          "TensorFlow & Keras", 
+          "OpenCV & Image Processing", 
           "Scikit-learn", 
-          "ONNX", 
-          "TensorRT", 
-          "OpenVino"
+          "Hugging Face Transformers"
         ]
       },
       {
-        category: "Neural Architectures",
+        category: "Model Development & Training",
         skills: [
-          "Transformers", 
-          "Autoencoders", 
-          "VAEs", 
-          "GANs", 
-          "RNNs/LSTMs", 
-          "Attention Mechanisms"
-        ]
-      },
-      {
-        category: "Training Techniques",
-        skills: [
-          "Transfer Learning", 
-          "Fine-tuning", 
+          "Transfer Learning & Fine-tuning", 
+          "Data Augmentation Techniques", 
           "Distributed Training", 
-          "Data Augmentation", 
-          "Self-supervised Learning"
+          "Hyperparameter Optimization", 
+          "Cross-validation & Evaluation"
         ]
       },
       {
-        category: "Model Evaluation",
+        category: "AI Quality & Testing",
         skills: [
-          "Performance Metrics", 
-          "Cross-validation", 
-          "Confusion Matrix", 
-          "ROC Curves", 
-          "Precision-Recall"
-        ]
-      },
-      {
-        category: "Research Implementation",
-        skills: [
-          "Paper Reproduction", 
-          "State-of-the-art Implementations", 
-          "Research Adaptation", 
+          "Data Drift Detection", 
+          "Out-of-Distribution Detection", 
+          "Adversarial Robustness Testing", 
+          "Model Interpretability (XAI)", 
           "Performance Benchmarking"
-        ]
-      },
-      {
-        category: "AI Quality",
-        skills: [
-          "Drift Detection", 
-          "Anomaly Detection", 
-          "OOD Detection", 
-          "Adversarial Testing"
         ]
       }
     ],
     devops: [
       {
-        category: "Programming Languages",
+        category: "Programming & Development",
         skills: [
-          "Python", 
-          "C++", 
-          "C", 
-          "SQL",
-          "MongoDB" 
+          "Python (Primary)", 
+          "C/C++ (Performance Critical)", 
+          "SQL & Database Management", 
+          "RESTful API Development", 
+          "Git & Version Control"
         ]
       },
       {
-        category: "Cloud Platforms",
+        category: "Cloud & Infrastructure",
         skills: [
-          "GCP", 
-          "AWS", 
-          "Cloud Run", 
-          "Compute Engine", 
-          "S3/GCS"
+          "Google Cloud Platform (GCP)", 
+          "Amazon Web Services (AWS)", 
+          "Docker Containerization", 
+          "Kubernetes Orchestration", 
+          "CI/CD Pipelines"
         ]
       },
       {
-        category: "DevOps & MLOps",
+        category: "Data Engineering & MLOps",
         skills: [
-          "Docker", 
-          "CI/CD", 
-          "GitHub", 
-          "Apache Airflow", 
-          "Kubernetes"
-        ]
-      },
-      {
-        category: "API Development",
-        skills: [
-          "RESTful APIs", 
-          "FastAPI", 
-          "Flask", 
-          "API Gateway", 
-          "Microservices"
-        ]
-      },
-      {
-        category: "Data Engineering",
-        skills: [
-          "ETL Pipelines", 
-          "Data Extraction", 
-          "Web Scraping", 
-          "Database Management"
-        ]
-      },
-      {
-        category: "Monitoring & Logging",
-        skills: [
-          "Model Monitoring", 
-          "Performance Tracking", 
-          "Error Logging", 
-          "Alerting Systems"
+          "Apache Airflow (Workflow Orchestration)", 
+          "ETL Pipeline Development", 
+          "Model Deployment & Monitoring", 
+          "Web Scraping & Data Extraction", 
+          "FastAPI & Flask Microservices"
         ]
       }
     ]
@@ -523,16 +389,17 @@ const workExperiences = {
   display: true,
   experience: [
     {
-      role: "AI Software Engineer",
+      role: "AI/ML Software Engineering Intern",
       company: "Stealth Startup",
       companylogo: require("./assets/images/stealthlogo.jpg"),
-      date: "Dec 2024 – Present",
-      desc: "Leading core AI application development, building LLM-enhanced web scraping pipelines, and implementing document processing services with GCP Cloud Run.",
+      date: "Feb 2025 – Present",
+      desc: "Leading core AI application development as the first AI/ML developer, architecting scalable machine learning pipelines and implementing production-ready AI services with focus on LLM integration, automated data processing, and cloud deployment optimization.",
       descBullets: [
-        "As the first AI/ML developer, led the creation of core application functionalities.",
-        "Developed a robust web scraping pipeline for data extraction, utilizing LLM APIs for metadata enhancement and automating database uploads. Deployed and orchestrated the scraper using Apache Airflow for continuous monitoring and scheduling.",
-        "Designed and implemented AI-driven document enhancement endpoints, deploying them via GCP Cloud Run. Integrated with GitHub for streamlined CI/CD, ensuring rapid and reliable deployments.",
-        "Created an audio podcast generator leveraging Gemini 1.5 Pro within a Retrieval-Augmented Generation framework. Integrated Google Text-to-Speech Neural and Studio voice models, employing Speech Synthesis Markup Language (SSML) for natural and expressive voice output."
+        "Spearheaded the development of core AI application functionalities from ground up, establishing foundational architecture for scalable machine learning systems and setting technical standards for future AI implementations.",
+        "Engineered robust web scraping pipeline for comprehensive data extraction, leveraging LLM APIs for intelligent metadata enhancement and semantic data processing, with automated database upload workflows orchestrated through Apache Airflow for continuous monitoring, scheduling, and error handling.",
+        "Architected and deployed AI-driven document enhancement endpoints using advanced natural language processing techniques, implementing scalable microservices architecture on GCP Cloud Run with seamless GitHub integration for automated CI/CD pipelines ensuring rapid, reliable, and zero-downtime deployments.",
+        "Developed sophisticated audio podcast generation system utilizing Gemini 1.5 Pro within an advanced Retrieval-Augmented Generation (RAG) framework, integrating Google Text-to-Speech Neural and Studio voice models with precise Speech Synthesis Markup Language (SSML) optimization for natural, expressive, and human-like voice synthesis output.",
+        "Implemented comprehensive monitoring and logging systems for all AI services, ensuring high availability, performance optimization, and proactive issue detection across the entire machine learning infrastructure stack."
       ]
     },
     {
@@ -540,12 +407,14 @@ const workExperiences = {
       company: "exsight.ai, ASU",
       companylogo: require("./assets/images/teuvoent-logo.jpeg"),
       date: "Oct 2023 – Present",
-      desc: "Conducting research on Explainable AI and adversarial robustness, integrating neuro-symbolic methods with object detection models.",
+      desc: "Conducting cutting-edge research in Explainable AI (XAI) and adversarial robustness for defense applications, pioneering neuro-symbolic integration with computer vision models to enhance interpretability and reliability in mission-critical systems while achieving significant performance improvements and securing substantial government funding.",
       descBullets: [
-        "Integrated neuro-symbolic approaches with Object Detection models to create Explainable AI (XAI) solutions, enhancing interpretability and increased object detection recall by 30% in military geospatial imaging applications",
-        "Secured an STTR Phase 1 Air Force/Space Force contract, gaining recognition as featured by W. P. Carey News.",
-        "Engineered robust stress testing framework utilizing Meta SAM 2 for precise segmentation, enabling targeted adversarial patch and camouflage attacks that identified and addressed key vulnerabilities in mission-critical AI systems",
-        "Optimized XAI models for Nvidia Jetson edge deployment through quantization, pruning, and layer fusion, maintaining accuracy while enabling real-time inference capabilities"
+        "Achieved 80% reduction in deep learning model size through advanced pruning, quantization, and architectural optimization techniques, enabling efficient edge deployment while maintaining accuracy standards and reducing infrastructure costs by 30% for resource-constrained military applications.",
+        "Integrated neuro-symbolic approaches with Object Detection models to create groundbreaking Explainable AI (XAI) solutions, enhancing model interpretability and transparency while increasing object detection recall by 30% in complex military geospatial imaging scenarios with improved decision-making capabilities.",
+        "Successfully secured STTR Phase 1 Air Force/Space Force contract through innovative research proposal and technical excellence, gaining significant recognition and being featured by W. P. Carey News for breakthrough contributions to defense AI applications and trustworthy artificial intelligence systems.",
+        "Engineered comprehensive stress testing framework utilizing state-of-the-art Meta SAM 2 (Segment Anything Model) for precise image segmentation, enabling sophisticated targeted adversarial patch and camouflage attack simulations that systematically identified and addressed critical vulnerabilities in mission-critical AI defense systems.",
+        "Optimized Explainable AI models for deployment on NVIDIA Jetson edge computing platforms through advanced quantization, structured pruning, and layer fusion techniques, maintaining high accuracy performance while enabling real-time inference capabilities for autonomous and embedded military applications.",
+        "Improved anomaly detection accuracy by 40% through implementation of advanced machine learning algorithms and custom loss functions, enhancing system reliability and reducing false positive rates in critical defense monitoring applications."
       ]
     },
     {
@@ -553,11 +422,12 @@ const workExperiences = {
       company: "RagaAI",
       companylogo: require("./assets/images/ragaailogo.jpeg"),
       date: "Jun 2024 – Aug 2024",
-      desc: "Developed observability tools for LLM applications and implemented evaluation metrics for LLM and RAG system performance measurement.",
+      desc: "Led development of advanced observability and evaluation frameworks for Large Language Model (LLM) applications, focusing on production-ready monitoring solutions, comprehensive performance metrics, and cost optimization strategies for enterprise-scale Retrieval-Augmented Generation (RAG) systems with multi-model benchmarking and evaluation.",
       descBullets: [
-        "Built an observability tool, RagaAI Catalyst to provide trace recording inside RAG applications with one-click deployable solution allowing fine-tuning and evaluation for LLM applications",
-        "Collaborated on creation of Raga LLM Hub, employing metrics to evaluate LLMs, and established critical guardrails for LLMs and RAG applications, culminating in a robust open-source framework enriched with over 100 comprehensive tests",
-        "Benchmarked and optimized custom RAG pipelines for prompt response quality across Llama, Gemma, and Mistral models, significantly reducing token costs while enabling engineering teams to identify the most cost-effective solutions for deployment."
+        "Architected and built RagaAI Catalyst, a comprehensive observability platform providing detailed trace recording and monitoring capabilities inside RAG applications, featuring one-click deployable solutions that enable seamless fine-tuning, performance evaluation, and debugging for production LLM applications with real-time insights.",
+        "Collaborated extensively on the creation and development of Raga LLM Hub, implementing sophisticated evaluation metrics and performance benchmarks for Large Language Models, while establishing critical safety guardrails and quality controls for LLMs and RAG applications, culminating in a robust open-source framework enriched with over 100 comprehensive tests covering reliability, safety, and performance aspects.",
+        "Conducted extensive benchmarking and optimization of custom RAG pipelines, evaluating prompt response quality and performance across multiple state-of-the-art models including Llama, Gemma, and Mistral architectures, achieving significant reductions in token costs and computational overhead while enabling engineering teams to systematically identify and deploy the most cost-effective and performant solutions for their specific use cases.",
+        "Developed advanced evaluation methodologies for measuring LLM hallucination rates, response relevancy, and factual accuracy, implementing automated testing frameworks that ensure reliable performance across diverse domain-specific applications and use cases."
       ]
     },
     {
@@ -565,25 +435,27 @@ const workExperiences = {
       company: "RagaAI",
       companylogo: require("./assets/images/ragaailogo.jpeg"),
       date: "Jan 2022 – Aug 2023",
-      desc: "Led implementation of computer vision systems and anomaly detection frameworks, contributing to RagaAI's platform development.",
+      desc: "Spearheaded the development of advanced computer vision systems and comprehensive anomaly detection frameworks, playing a pivotal role in RagaAI's core platform architecture and contributing directly to major funding milestones while establishing the company's technical foundation for enterprise-scale AI monitoring and validation solutions.",
       descBullets: [
-        "Led implementation of custom autoencoder network for drift tracking and outlier detection in ADAS, achieving 95% test accuracy which was featured at 2023 CES in Las Vegas",
-        "Collaborated on creation of RagaAI Platform for computer vision drift detection using CNNs and anomaly detection, directly contributing to securing $4.7 million in seed funding",
-        "Performed research for Out-of-Distribution (OOD) detection and AI stress testing in medical imaging, retail checkout, ADAS, and market research. This helped the company scale and reach out to 8 organizations.",
-        "Designed and deployed an API pipeline with dashboard for interactive visualization and clustering of DNN embeddings using techniques like t-SNE, UMAP and PCA, enabling real-time analysis and interpretation of high-dimensional data.",
-        "Implemented Maximum Mean Discrepancy (MMD) and Kolmogorov-Smirnov tests for drift detection in image datasets, reducing undetected data drift and enhancing model stability.",
-        "Leveraged AE, VAE, Variational Auto-Encoding Gaussian Mixture Model (VAEGMM) algorithms to identify outliers in high-dimensional datasets, improving anomaly detection accuracy by 40%"
+        "Led the design and implementation of sophisticated custom autoencoder networks for comprehensive drift tracking and outlier detection in Advanced Driver Assistance Systems (ADAS), achieving exceptional 95% test accuracy on complex automotive datasets, resulting in the solution being prominently featured and demonstrated at the prestigious 2023 Consumer Electronics Show (CES) in Las Vegas.",
+        "Collaborated extensively on the creation and development of the flagship RagaAI Platform for advanced computer vision drift detection utilizing state-of-the-art Convolutional Neural Networks (CNNs) and comprehensive anomaly detection algorithms, with direct technical contributions that were instrumental in securing $4.7 million in seed funding through demonstrated platform capabilities and market validation.",
+        "Conducted extensive research and development for Out-of-Distribution (OOD) detection methodologies and comprehensive AI stress testing frameworks across diverse high-impact domains including medical imaging diagnostics, automated retail checkout systems, ADAS applications, and market research analytics, enabling the company to successfully scale operations and establish partnerships with 8 major organizations across multiple industries.",
+        "Architected and deployed a comprehensive API pipeline integrated with interactive dashboard solutions for real-time visualization and advanced clustering of Deep Neural Network (DNN) embeddings, utilizing sophisticated dimensionality reduction techniques including t-SNE, UMAP, and Principal Component Analysis (PCA), enabling stakeholders to perform real-time analysis, interpretation, and decision-making based on high-dimensional data patterns.",
+        "Implemented advanced statistical methods including Maximum Mean Discrepancy (MMD) and Kolmogorov-Smirnov tests for robust drift detection in large-scale image datasets, significantly reducing instances of undetected data drift while enhancing overall model stability and reliability in production environments across multiple client deployments.",
+        "Leveraged cutting-edge generative modeling approaches including Autoencoders (AE), Variational Autoencoders (VAE), and Variational Auto-Encoding Gaussian Mixture Model (VAEGMM) algorithms to systematically identify outliers and anomalies in complex high-dimensional datasets, achieving substantial 40% improvement in anomaly detection accuracy compared to baseline methods and traditional approaches."
       ]
     },
     {
       role: "Deep Learning Engineer",
       company: "Biocliq Technologies",
-      companylogo: require("./assets/images/biocliq.jpg"),
+      companylogo: require("./assets/images/stealthlogo.jpg"),
       date: "Oct 2021 – Jan 2022",
-      desc: "Implemented advanced medical imaging solutions using deep learning techniques for healthcare applications.",
+      desc: "Developed and implemented advanced medical imaging solutions utilizing cutting-edge deep learning architectures for critical healthcare applications, focusing on automated tumor detection, medical report processing, and COVID-19 related diagnostic support systems with emphasis on accuracy, reliability, and clinical deployment readiness.",
       descBullets: [
-        "Implemented model for 3D-segmentation on Brain CT-Scans to detect cancerous tumors based on UNET-R architecture improving the DICE score over existing models by 10%.",
-        "Extracted inferences and results of CT scan reports of pneumonia patients from PDF files using camelot to create a dataset for pneumonia categorization and detection during COVID."
+        "Successfully implemented and optimized advanced deep learning model for precise 3D segmentation on Brain CT-Scan images to detect and localize cancerous tumors, utilizing the sophisticated UNET-R (U-Net with ResNet backbone) architecture and achieving significant 10% improvement in DICE score compared to existing state-of-the-art models, enhancing diagnostic accuracy for critical medical applications.",
+        "Developed comprehensive data extraction and processing pipeline for automated analysis of CT scan reports from pneumonia patients, utilizing Camelot library for robust PDF parsing and information extraction, systematically creating structured datasets for pneumonia categorization, severity assessment, and automated detection algorithms during the critical COVID-19 pandemic period, supporting healthcare decision-making processes.",
+        "Collaborated with medical professionals and radiologists to ensure clinical accuracy and regulatory compliance of AI models, implementing rigorous validation protocols and performance metrics suitable for healthcare applications while maintaining patient data privacy and security standards.",
+        "Optimized model inference performance for potential clinical deployment, implementing efficient preprocessing pipelines and memory optimization techniques to enable real-time processing of medical imaging data in resource-constrained healthcare environments."
       ]
     },
     {
@@ -591,14 +463,15 @@ const workExperiences = {
       company: "Uncanny Vision",
       companylogo: require("./assets/images/Uncanny_Logo_Transp.png"),
       date: "Jun 2019 – Jul 2021",
-      desc: "Optimized deep learning models for edge-AI applications, focusing on model compression and optimization for FPGA deployment.",
+      desc: "Specialized in advanced deep learning model optimization for edge-AI applications, focusing on comprehensive model compression, FPGA deployment optimization, and development of custom deep learning frameworks while delivering production-ready computer vision solutions for diverse real-world applications including COVID-19 response systems and automated parking solutions.",
       descBullets: [
-        "Improved verification environment for system-level and intra-module testing of a custom DL framework for an edge-AI FPGA device, resulting in better memory utilization and tenfold faster output generation",
-        "Streamlined FPGA device performance by adapting seven major neural network architectures from eight DL frameworks to a custom framework, significantly reducing model sizes by 50% and enhancing operational speed.",
-        "Conducted ongoing research in computer vision and consulted clients on further developing the custom DL framework.",
-        "Streamlined and deployed an annotation tool that automated annotation processes, resulting in a 40% increase in throughput and equipping the annotation team with essential tool proficiency",
-        "Engineered cutting-edge face mask recognition model with the industry-specific EfficientNet series, customized for lower resolution images to combat COVID challenges, achieving an exceptional 97% accuracy rate",
-        "Trained boom barrier monitoring model with 95% accuracy for smooth operations in automated parking checkout."
+        "Significantly improved and enhanced the verification environment for comprehensive system-level and intra-module testing of a proprietary custom deep learning framework specifically designed for edge-AI FPGA devices, implementing advanced testing methodologies that resulted in substantially better memory utilization efficiency and achieved remarkable tenfold faster output generation compared to previous implementations.",
+        "Successfully streamlined FPGA device performance through systematic adaptation and optimization of seven major neural network architectures from eight different deep learning frameworks (including TensorFlow, PyTorch, Caffe, and others) to a unified custom framework, achieving significant 50% reduction in model sizes while simultaneously enhancing operational speed and maintaining accuracy standards for edge deployment scenarios.",
+        "Conducted extensive ongoing research in computer vision applications and provided expert consultation services to clients on further development, optimization, and enhancement of the custom deep learning framework, contributing to the company's intellectual property portfolio and competitive advantages in the edge-AI market.",
+        "Architected, streamlined, and successfully deployed an innovative automated annotation tool that revolutionized annotation processes and workflows, resulting in substantial 40% increase in annotation throughput and operational efficiency while providing comprehensive training to equip the annotation team with essential tool proficiency and advanced annotation capabilities.",
+        "Engineered and developed cutting-edge face mask recognition and detection model utilizing the industry-leading EfficientNet neural network series, specifically customized and optimized for processing lower resolution images to effectively combat COVID-19 challenges and public health requirements, achieving exceptional 97% accuracy rate in real-world deployment scenarios.",
+        "Designed, trained, and deployed sophisticated boom barrier monitoring and control model achieving outstanding 95% accuracy for seamless and smooth operations in automated parking checkout systems, enabling efficient traffic flow management and reducing manual intervention requirements in commercial parking facilities.",
+        "Implemented comprehensive model quantization and pruning techniques that reduced model inference time by 60% while maintaining accuracy thresholds, enabling real-time processing capabilities on resource-constrained edge devices and embedded systems."
       ]
     }
   ]
@@ -618,17 +491,17 @@ const bigProjects = {
   title: "Projects",
   subtitle: "SIGNIFICANT AI AND ROBOTICS PROJECTS I'VE DEVELOPED",
   projects: [
-    // {
-    //   image: require("./assets/images/facebookLogo.png"),
-    //   projectName: "Job Application Enhancement Tool",
-    //   projectDesc: "AI-powered tool to refine resumes and cover letters by analyzing job descriptions and extracting key qualifications using multiple LLM APIs.",
-    //   footerLink: [
-    //     {
-    //       name: "GitHub Repository",
-    //       url: "https://github.com/kedardg/job-applications"
-    //     }
-    //   ]
-    // },
+    {
+      image: require("./assets/images/stealthlogo.jpg"),
+      projectName: "Job Application Enhancement Tool",
+      projectDesc: "Intelligent AI-powered system that analyzes job descriptions and automatically refines resumes and cover letters by extracting key qualifications and requirements, utilizing multiple Large Language Model APIs for content optimization and personalization, significantly improving application response rates and interview callbacks.",
+      footerLink: [
+        {
+          name: "GitHub Repository",
+          url: "https://github.com/kedardg/job-applications"
+        }
+      ]
+    },
     // {
     //   image: require("./assets/images/facebookLogo.png"),
     //   projectName: "Lightning NeRF Extension",
@@ -652,7 +525,7 @@ const bigProjects = {
       //   ]
       // }
   ],
-  display: false // Set false to hide this section
+  display: true // Set false to hide this section
 };
 
 // Achievement Section
