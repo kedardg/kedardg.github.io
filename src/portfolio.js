@@ -79,7 +79,7 @@ const skillsSection = {
           "Natural Language Processing",
           "Object Detection",
           "AI Agents",
-          "LLMOps"
+          "★ LLMOps"
         ]
       },
       {
@@ -88,8 +88,8 @@ const skillsSection = {
           "CNNs (ResNet, EfficientNet, YOLO, Mask-RCNN)", 
           "Transformers", 
           "Large Language Models", 
-          "Retrieval-Augmented Generation",
-          "Model Optimization (Quantization, Pruning)"
+          "★ Retrieval-Augmented Generation (RAG)",
+          "Model Optimization (Quantization & Pruning)"
         ]
       },
       {
@@ -135,7 +135,7 @@ const skillsSection = {
         ]
       },
       {
-        category: "Computer Vision Applications",
+        category: "CV Applications",
         skills: [
           "ADAS & Autonomous Vehicles", 
           "Medical Imaging & Diagnostics", 
@@ -157,9 +157,9 @@ const skillsSection = {
         ]
       },
       {
-        category: "Retrieval-Augmented Generation (RAG)",
+        category: "★ Retrieval-Augmented Generation (RAG)",
         skills: [
-          "Vector Databases (Pinecone, Chroma)", 
+          "Vector Databases (Pinecone & Chroma)", 
           "Semantic Search", 
           "Context Optimization", 
           "Document Processing", 
@@ -167,7 +167,7 @@ const skillsSection = {
         ]
       },
       {
-        category: "AI Agents & Agentic Frameworks",
+        category: "AI Agents & Frameworks",
         skills: [
           "LangChain & LangGraph", 
           "CrewAI (Multi-agent)", 
@@ -189,7 +189,7 @@ const skillsSection = {
     ],
     edge: [
       {
-        category: "LLMOps & Model Operations",
+        category: "★ LLMOps & Model Operations",
         skills: [
           "Model Training & Fine-tuning", 
           "Model Versioning & Registry", 
@@ -246,7 +246,7 @@ const skillsSection = {
           "Data Drift Detection", 
           "Out-of-Distribution Detection", 
           "Adversarial Robustness Testing", 
-          "Model Interpretability (XAI)", 
+          "★ Model Interpretability (XAI)", 
           "Performance Benchmarking"
         ]
       }
@@ -389,20 +389,6 @@ const workExperiences = {
   display: true,
   experience: [
     {
-      role: "AI/ML Software Engineering Intern",
-      company: "Stealth Startup",
-      companylogo: require("./assets/images/stealthlogo.jpg"),
-      date: "Feb 2025 – Present",
-      desc: "Leading core AI application development as the first AI/ML developer, architecting scalable machine learning pipelines and implementing production-ready AI services with focus on LLM integration, automated data processing, and cloud deployment optimization.",
-      descBullets: [
-        "Spearheaded the development of core AI application functionalities from ground up, establishing foundational architecture for scalable machine learning systems and setting technical standards for future AI implementations.",
-        "Engineered robust web scraping pipeline for comprehensive data extraction, leveraging LLM APIs for intelligent metadata enhancement and semantic data processing, with automated database upload workflows orchestrated through Apache Airflow for continuous monitoring, scheduling, and error handling.",
-        "Architected and deployed AI-driven document enhancement endpoints using advanced natural language processing techniques, implementing scalable microservices architecture on GCP Cloud Run with seamless GitHub integration for automated CI/CD pipelines ensuring rapid, reliable, and zero-downtime deployments.",
-        "Developed sophisticated audio podcast generation system utilizing Gemini 1.5 Pro within an advanced Retrieval-Augmented Generation (RAG) framework, integrating Google Text-to-Speech Neural and Studio voice models with precise Speech Synthesis Markup Language (SSML) optimization for natural, expressive, and human-like voice synthesis output.",
-        "Implemented comprehensive monitoring and logging systems for all AI services, ensuring high availability, performance optimization, and proactive issue detection across the entire machine learning infrastructure stack."
-      ]
-    },
-    {
       role: "Research Assistant",
       company: "exsight.ai, ASU",
       companylogo: require("./assets/images/teuvoent-logo.jpeg"),
@@ -411,10 +397,24 @@ const workExperiences = {
       descBullets: [
         "Achieved 80% reduction in deep learning model size through advanced pruning, quantization, and architectural optimization techniques, enabling efficient edge deployment while maintaining accuracy standards and reducing infrastructure costs by 30% for resource-constrained military applications.",
         "Integrated neuro-symbolic approaches with Object Detection models to create groundbreaking Explainable AI (XAI) solutions, enhancing model interpretability and transparency while increasing object detection recall by 30% in complex military geospatial imaging scenarios with improved decision-making capabilities.",
-        "Successfully secured STTR Phase 1 Air Force/Space Force contract through innovative research proposal and technical excellence, gaining significant recognition and being featured by W. P. Carey News for breakthrough contributions to defense AI applications and trustworthy artificial intelligence systems.",
+        "Successfully secured STTR Phase 1 Air Force/Space Force contract through technical excellence and being featured by W. P. Carey News for breakthrough contributions to defense AI applications and trustworthy artificial intelligence systems.",
         "Engineered comprehensive stress testing framework utilizing state-of-the-art Meta SAM 2 (Segment Anything Model) for precise image segmentation, enabling sophisticated targeted adversarial patch and camouflage attack simulations that systematically identified and addressed critical vulnerabilities in mission-critical AI defense systems.",
         "Optimized Explainable AI models for deployment on NVIDIA Jetson edge computing platforms through advanced quantization, structured pruning, and layer fusion techniques, maintaining high accuracy performance while enabling real-time inference capabilities for autonomous and embedded military applications.",
         "Improved anomaly detection accuracy by 40% through implementation of advanced machine learning algorithms and custom loss functions, enhancing system reliability and reducing false positive rates in critical defense monitoring applications."
+      ]
+    },
+    {
+      role: "AI Engineer",
+      company: "Stealth Startup",
+      companylogo: require("./assets/images/stealthlogo.jpg"),
+      date: "Feb 2025 – May 2025",
+      desc: "Leading core AI application development as the first AI/ML developer, architecting scalable machine learning pipelines and implementing production-ready AI services with focus on LLM integration, automated data processing, and cloud deployment optimization.",
+      descBullets: [
+        "Spearheaded the development of core AI application functionalities from ground up, establishing foundational architecture for scalable machine learning systems and setting technical standards for future AI implementations.",
+        "Engineered robust web scraping pipeline for comprehensive data extraction, leveraging LLM APIs for intelligent metadata enhancement and semantic data processing, with automated database upload workflows orchestrated through Apache Airflow for continuous monitoring, scheduling, and error handling.",
+        "Architected and deployed AI-driven document enhancement endpoints using advanced natural language processing techniques, implementing scalable microservices architecture on GCP Cloud Run with seamless GitHub integration for automated CI/CD pipelines ensuring rapid, reliable, and zero-downtime deployments.",
+        "Developed sophisticated audio podcast generation system utilizing Gemini 1.5 Pro within an advanced Retrieval-Augmented Generation (RAG) framework, integrating Google Text-to-Speech Neural and Studio voice models with precise Speech Synthesis Markup Language (SSML) optimization for natural, expressive, and human-like voice synthesis output.",
+        "Implemented comprehensive monitoring and logging systems for all AI services, ensuring high availability, performance optimization, and proactive issue detection across the entire machine learning infrastructure stack."
       ]
     },
     {
@@ -490,6 +490,7 @@ const openSource = {
 const bigProjects = {
   title: "Projects",
   subtitle: "SIGNIFICANT AI AND ROBOTICS PROJECTS I'VE DEVELOPED",
+  display: false,
   projects: [
     {
       image: require("./assets/images/stealthlogo.jpg"),
