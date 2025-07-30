@@ -1,0 +1,171 @@
+@import "../../_globalColor";
+
+.error-boundary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  padding: 2rem;
+  background-color: $lightBackground1;
+  border-radius: 8px;
+  margin: 2rem 0;
+
+  .dark-mode & {
+    background-color: $darkBackground;
+    color: $textColorDark;
+  }
+}
+
+.error-boundary-content {
+  text-align: center;
+  max-width: 500px;
+
+  h2 {
+    color: $titleColor;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+
+    .dark-mode & {
+      color: $textColorDark;
+    }
+  }
+
+  p {
+    color: $textColor;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+
+    .dark-mode & {
+      color: $textSecondaryDark;
+    }
+  }
+}
+
+.error-boundary-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.error-boundary-retry-btn,
+.error-boundary-refresh-btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 120px;
+
+  &:focus {
+    outline: 2px solid $buttonColor;
+    outline-offset: 2px;
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.error-boundary-retry-btn {
+  background-color: $buttonColor;
+  color: white;
+
+  &:hover {
+    background-color: $buttonHover;
+  }
+
+  .dark-mode & {
+    background-color: $buttonColorDark;
+  }
+}
+
+.error-boundary-refresh-btn {
+  background-color: transparent;
+  color: $buttonColor;
+  border: 2px solid $buttonColor;
+
+  &:hover {
+    background-color: $buttonColor;
+    color: white;
+  }
+
+  .dark-mode & {
+    color: $buttonColorDark;
+    border-color: $buttonColorDark;
+
+    &:hover {
+      background-color: $buttonColorDark;
+      color: $darkBackground;
+    }
+  }
+}
+
+.error-boundary-details {
+  margin-top: 2rem;
+  text-align: left;
+  
+  summary {
+    cursor: pointer;
+    font-weight: 500;
+    color: $textSecondary;
+    margin-bottom: 1rem;
+
+    .dark-mode & {
+      color: $textSecondaryDark;
+    }
+
+    &:hover {
+      color: $buttonColor;
+    }
+  }
+
+  pre {
+    background-color: $backgroundTertiary;
+    padding: 1rem;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    overflow-x: auto;
+    border: 1px solid $lightBorder1;
+
+    .dark-mode & {
+      background-color: $backgroundTertiaryDark;
+      color: $textColorDark;
+      border-color: $backgroundSecondaryDark;
+    }
+  }
+}
+
+// Responsive design
+@media (max-width: 768px) {
+  .error-boundary {
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+
+  .error-boundary-content {
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  .error-boundary-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .error-boundary-retry-btn,
+  .error-boundary-refresh-btn {
+    width: 100%;
+    max-width: 200px;
+  }
+}

@@ -1,8 +1,45 @@
 .experience-cards-div {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-  gap: 1rem 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 1.5rem 1.5rem;
   align-items: start;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Large Desktop: 3 columns with more space */
+@media (min-width: 1400px) {
+  .experience-cards-div {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem 2rem;
+    max-width: 1600px;
+  }
+}
+
+/* Desktop: 2 columns for better text space */
+@media (min-width: 900px) and (max-width: 1399px) {
+  .experience-cards-div {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 2rem;
+    max-width: 1200px;
+  }
+}
+
+/* Tablet: 2 columns with smaller gap */
+@media (min-width: 768px) and (max-width: 899px) {
+  .experience-cards-div {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem 1.5rem;
+    max-width: 900px;
+  }
+}
+
+/* Mobile: 1 column */
+@media (max-width: 767px) {
+  .experience-cards-div {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
 }
 
 .experience-heading {

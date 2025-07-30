@@ -1,5 +1,33 @@
 @import "../../_globalColor";
 
+/* Skip to content link for accessibility */
+.skip-to-content {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-100%);
+  background: $buttonColor;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 4px;
+  z-index: 9999;
+  font-weight: 600;
+  transition: transform 0.3s ease;
+  border: 2px solid $buttonColor;
+
+  &:focus {
+    transform: translateX(-50%) translateY(0);
+    outline: 2px solid $buttonHover;
+    outline-offset: 2px;
+  }
+
+  .dark-mode & {
+    background: $buttonColorDark;
+    border-color: $buttonColorDark;
+  }
+}
+
 /*React-headroom*/
 .headroom-wrapper {
   max-height: 100px;
