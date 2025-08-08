@@ -390,7 +390,7 @@ const workExperiences = {
   experience: [
     {
       role: "Research Assistant",
-      company: "exsight.ai, ASU",
+      company: "ExSight.ai",
       companylogo: require("./assets/images/teuvoent-logo.jpeg"),
       date: "Oct 2023 – Present",
       desc: "Conducting cutting-edge research in Explainable AI (XAI) and adversarial robustness for defense applications, pioneering neuro-symbolic integration with computer vision models to enhance interpretability and reliability in mission-critical systems while achieving significant performance improvements and securing substantial government funding.",
@@ -538,6 +538,46 @@ const achievementSection = {
 
   achievementsCards: [
     {
+      title: "DSPy: Build and Optimize Agentic Apps",
+      subtitle: "DeepLearning.AI",
+      footerLink: [
+        {
+          name: "Verify Credential",
+          url: "https://learn.deeplearning.ai/accomplishments/956e185d-dee0-423d-b366-1e15aa8ce569?usp=sharing" // You can update this later
+        }
+      ]
+    },
+    {
+      title: "Improving Accuracy of LLM Applications",
+      subtitle: "DeepLearning.AI",
+      footerLink: [
+        {
+          name: "Verify Credential",
+          url: "https://learn.deeplearning.ai/accomplishments/d386892a-050d-4098-a55c-26141d739405?usp=sharing" // You can update this later
+        }
+      ]
+    },
+    {
+      title: "Knowledge Graphs for RAG",
+      subtitle: "DeepLearning.AI",
+      footerLink: [
+        {
+          name: "Verify Credential",
+          url: "https://learn.deeplearning.ai/accomplishments/b03620ff-f32f-44ea-aef2-f88d10cd8ddf?usp=sharing" // You can update this later
+        }
+      ]
+    },
+    {
+      title: "LangChain Chat with Your Data",
+      subtitle: "DeepLearning.AI",
+      footerLink: [
+        {
+          name: "Verify Credential",
+          url: "https://learn.deeplearning.ai/accomplishments/a004452a-b7a6-46d0-b1c4-110dddb1245f?usp=sharing" // You can update this later
+        }
+      ]
+    },
+      {
       title: "Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization",
       subtitle: "DeepLearning.AI",
       footerLink: [
